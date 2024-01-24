@@ -98,12 +98,67 @@ int main(void) {
     */
 
     /* シフト演算 */
-    int s = 5;
-    int t = 2;
+    // int s = 5;
+    // int t = 2;
 
-    printf("%d\n", 5 << 2);
-    /* 2桁左にずらす */
+    // printf("%d\n", 5 << 2);
+    // /* 2桁左にずらす */
 
+    /* sample8
+    型変換
+    */
+
+    // int inum;
+    // double dnum;
+
+    // inum = 160;
+
+    // printf("身長は%dセンチ\n", inum);
+    // printf("double型の変数に代入\n");
+
+    // /*
+    // dnum = inum;
+    // キャスト演算子を使うと↓
+    // */
+    // dnum = (double) inum;
+    // printf("身長は%fセンチ\n", dnum);
+    // /* 大きなサイズの型の変数に小さなサイズの型の値を代入することができる */
+
+    // /* sample9 */
+    // dnum = 160.5;
+
+    // printf("身長は%fセンチ\n", dnum);
+    // printf("int型の変数に代入\n");
+
+    // inum = (int) dnum;
+    // printf("身長は%dセンチ\n", inum);
+
+    /* sample10
+    異なる型どうしの演算
+    */
+
+    // int d = 2;
+    // double pi = 3.14;
+
+    // printf("直径%dセンチの円、円周は%fセンチ\n", d, d * pi);
+    /* 一方のオペランドを大きなサイズのほうに型変換してから演算を行う */
+
+    /* sample11
+    同じ型どうしの演算
+    */
+
+    int num_a, num_b;
+    double div;
+
+    num_a = 5;
+    num_b = 4;
+
+    div = num_a / num_b;
+    /* int型どうしのため、5/4が1というint型の値になっている */
+    printf("5/4は%f\n", div);
+
+    div = (double) num_a / (double) num_b;
+    printf("5/4は%f\n", div);
 
     return 0;
 }

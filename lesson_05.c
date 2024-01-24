@@ -77,4 +77,5 @@ int main(void) {
     printf("%cコースを選択しました。\n", ans);
 
     return 0;
+
 }
